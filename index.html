@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUXE INTERIORS | Premium Modern Furniture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#bd900a",
+                        "accent-gold": "#C9A26A",
+                        "walnut": "#5A4636",
+                        "charcoal": "#2E2E2E",
+                        "background-light": "#FAF9F6",
+                        "background-dark": "#221e10",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-rows: 200px;
+            gap: 1.5rem;
+        }
+        .masonry-item-tall { grid-row: span 3; }
+        .masonry-item-wide { grid-row: span 2; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-charcoal dark:text-slate-100 font-display selection:bg-primary/30">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 bg-background-light/80 backdrop-blur-md border-b border-walnut/10 px-6 lg:px-20 py-4">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<a class="flex items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-primary text-3xl">chair</span>
+<h2 class="font-serif text-2xl font-bold tracking-tight text-charcoal">LUXE</h2>
+</a>
+<nav class="hidden lg:flex items-center gap-8 text-sm font-medium uppercase tracking-widest text-charcoal/70">
+<a class="hover:text-primary transition-colors" href="#">Collections</a>
+<a class="hover:text-primary transition-colors" href="#">Living</a>
+<a class="hover:text-primary transition-colors" href="#">Dining</a>
+<a class="hover:text-primary transition-colors" href="#">Office</a>
+<a class="hover:text-primary transition-colors" href="#">Showrooms</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined p-2 hover:bg-primary/10 rounded-full transition-colors">search</button>
+<button class="material-symbols-outlined p-2 hover:bg-primary/10 rounded-full transition-colors">favorite</button>
+<button class="flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm tracking-wide hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+<span>BOOK VISIT</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-charcoal/30 z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Luxury modern living room with organic shapes and beige tones" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAl2X67DKermvz1M0JeEpq9lPZuxSGOskg3agOiWb-2zS59-KPy_kiTb4W96REz4UwByluE08smqK3RY5358huuAEj-PeIccAEIEeH4GC-kM-lQaswkwspX5Chk-hxxHkpoAzgFGVY4Owt97MySMyJoAxn-2kShxdzXttWJDmsswnnhU26Xt_6ef1hfcYMsJfAYWJEiRlxqEbi1leSq1IcJ_ZM4k0dgtEkBHueuW_duYJryXrDsl5rBOdfaL0eQ1R3ESOlhfuSEbMI')"></div>
+<div class="relative z-20 text-center text-white px-6 max-w-4xl">
+<h1 class="font-serif text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight">Furniture That Defines Your Space</h1>
+<p class="text-lg md:text-xl font-light mb-10 tracking-wide opacity-90">Experience the pinnacle of Scandinavian and Italian design, crafted for the modern home.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform">Explore Collection</button>
+<button class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-charcoal transition-all">Book Showroom Visit</button>
+</div>
+</div>
+</section>
+<!-- Categories Grid -->
+<section class="py-24 px-6 lg:px-20 max-w-[1440px] mx-auto">
+<div class="flex items-end justify-between mb-12">
+<div>
+<span class="text-primary font-bold uppercase tracking-[0.3em] text-xs">Curated Spaces</span>
+<h2 class="font-serif text-4xl mt-2">Shop by Category</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-walnut/5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Modern minimalist living room chair" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFJncwvTIOpDJGKovFaIzxvG0MirCZDmAz9Uq1JOX_7MUrHwIYmexR76ec1aCePJWCTnAL9cxaToQJ_WxOzr5x5_ScaPf_zYxpl0uzIDDZsyYWAVB5LJ7_pXCg7q-Xi-lxTPcAuPzVz8XvvDvCyEbL1KRD-_cGC-Yg3j-CvntMqzyjUHSPMg5o8W_9aTW9090FHxsAixa4SZ7UrjGEA2MdebgCdDi2R1XcM3n5QIerYsGgPC9zA569Y3UM1MQyl6hH94dgvXwdnQI')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-white text-2xl font-serif">Living Room</h3>
+<p class="text-white/70 text-sm mt-2 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">View Collection →</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-walnut/5 lg:mt-12">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Luxurious velvet bedroom set" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpgk_-M3o-T1OSLMSTbuAIFff_mTNk3fQIWoYAHE2W7wNVqSZPyqW_2kv5en0bXsmbSgbtgnrf87tWYS7GupxBLegsLYBNgnLePNRV8hzDZGBJIJAyys-TtakwsFczk3NpL0jGLuppw9naSM1zx0gB3qhbnOBFLG9d8JKhu0_-XfSow3jSnzS7Ok6kGuPxuDxn4mcTH70zJKk3nFWy2XCb1QakxBirv7LBdMu0ROdgURNnhhI4GobLhLcOKm7DLH7outRniyIZKrM')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-white text-2xl font-serif">Bedroom</h3>
+<p class="text-white/70 text-sm mt-2 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">View Collection →</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-walnut/5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Elegant marble dining table with modern chairs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMl7jEOFdJTLFuMwtQ5WH6aWSa3uBc3ys4tpqtuxx1hTIlj1gnxZYPEV4855o6nBUuWT8wiYXqEHJdMki7-AJ48mxv6wUzzJ_YwQmuhaIYuDopk5b0bENVSTHbj2tTj4tJ68LlJa1rq_7lrpRsmcy-77Nt406MV1KTuFS2lRHx9T53ncGc-y2G3OawPisVDwtvv05W7QzyIVnXTd7LVkDqthnVuIlHojUkkXf7ExzZQ_lUE-cuhND8HQujP3iLeXiD5lBfcXAcNL8')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-white text-2xl font-serif">Dining</h3>
+<p class="text-white/70 text-sm mt-2 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">View Collection →</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Products -->
+<section class="bg-[#EDE6DC]/30 py-24 px-6 lg:px-20">
+<div class="max-w-[1440px] mx-auto">
+<div class="text-center mb-16">
+<span class="text-primary font-bold uppercase tracking-[0.3em] text-xs">The Essentials</span>
+<h2 class="font-serif text-4xl md:text-5xl mt-4">Signature Pieces</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product Card -->
+<div class="group bg-white rounded-2xl p-4 transition-all hover:shadow-2xl hover:shadow-walnut/5">
+<div class="relative overflow-hidden rounded-xl aspect-square mb-6 bg-background-light">
+<img alt="Nordic Lounge Chair" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist wooden lounge chair with cream upholstery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChHKHklbxwO30XwV0crlLxmGu2c4yY-5U1FPdjWcnvVozRDo0Aqopz8xoOonzjAG3ZhRAfMe9XphsqlBGltiHnEtN39ieE9ntoC1He3WmcHsEnijOhS9ho7yDqqUErDJHHhhFySNmaZZ5ZspIrDxKMU-MEtuematFFkR_iT8HDPbqgFU9JREHthIFxGlllATg6ePOJSsYF1sAFTWsHsCsQ44gEJ7B9chUspX8MNak15iR3zprJRtM_jjQqRvz16YVxk9XcB76vsSw"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full material-symbols-outlined text-walnut hover:text-primary transition-colors">favorite</button>
+<div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-charcoal text-white py-3 rounded-lg font-bold text-sm tracking-wider uppercase">Quick View</button>
+</div>
+</div>
+<div class="px-2">
+<h3 class="font-serif text-xl mb-1">Nordic Lounge Chair</h3>
+<div class="flex items-center justify-between">
+<span class="text-walnut/60 text-sm">Oak / Linen</span>
+<span class="font-bold text-primary">$1,250</span>
+</div>
+</div>
+</div>
+<!-- Repeat Products -->
+<div class="group bg-white rounded-2xl p-4 transition-all hover:shadow-2xl hover:shadow-walnut/5">
+<div class="relative overflow-hidden rounded-xl aspect-square mb-6 bg-background-light">
+<img alt="Sleek Walnut Desk" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern walnut wood desk with thin metal legs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo9Ud64ZpJ1l4nyTI_c6ObUkoSjd9tt-Hwnm2haq_jq9UQzsVRs33L0XkIR5Gkiy6YH1VWGXnO37UhHfM0fn37N4J_SHgmCyQIJfdKWwxNFPbq5R_T6Jm_MQFNsiN3GHUUfZybH7bSNvYFgqpu6SQUi8II0VAVgQ92QKg0jDT__VYbXYvrUZCKuiUIUDCp3zk3ag2el4QbCzhp2eWU-3KNTl7HF_Wrg1u-8mqLypJagmYRp6aBP1W4nkhBn-qFm6n-Z5ApdghcdCw"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full material-symbols-outlined text-walnut hover:text-primary transition-colors">favorite</button>
+<div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-charcoal text-white py-3 rounded-lg font-bold text-sm tracking-wider uppercase">Quick View</button>
+</div>
+</div>
+<div class="px-2">
+<h3 class="font-serif text-xl mb-1">Aurelia Work Desk</h3>
+<div class="flex items-center justify-between">
+<span class="text-walnut/60 text-sm">Dark Walnut</span>
+<span class="font-bold text-primary">$2,800</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-2xl p-4 transition-all hover:shadow-2xl hover:shadow-walnut/5">
+<div class="relative overflow-hidden rounded-xl aspect-square mb-6 bg-background-light">
+<img alt="Emerald Sofa" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Deep green velvet sofa with gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Osqc3YQFrTRMEK3RaoneisWWpVnAhQrfVACEgL3ZhuPk_Tcenc8nfUgrElMJty4fdV681ExZHA_DVfHL0oZ2zU8_NHwiq8eTbHsKPhKMrYMEFUlWuar0859Ha929j3k9bCwvJvXGVUnZpbJM6N8AaY-Egw6cF5CY3b0BTqsNZdO_U8e7EK3jpVahFaHkoSYblhH2NqeZhEdnsgyaYsDSSIZV3L1fiTe6JHrQ0HhOBPzJsi7xzxwErPqb82tHMQEV_r3-jaa58NI"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full material-symbols-outlined text-walnut hover:text-primary transition-colors">favorite</button>
+<div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-charcoal text-white py-3 rounded-lg font-bold text-sm tracking-wider uppercase">Quick View</button>
+</div>
+</div>
+<div class="px-2">
+<h3 class="font-serif text-xl mb-1">Verona Velvet Sofa</h3>
+<div class="flex items-center justify-between">
+<span class="text-walnut/60 text-sm">Forest / Brass</span>
+<span class="font-bold text-primary">$4,490</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-2xl p-4 transition-all hover:shadow-2xl hover:shadow-walnut/5">
+<div class="relative overflow-hidden rounded-xl aspect-square mb-6 bg-background-light">
+<img alt="Modern Table Lamp" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Abstract white ceramic table lamp with fabric shade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKyEZ9-qhRq0dR9LbLOzKOwUCNtRkB3nxjozHsNciROAJINF8ne9pCVE7Q0M08Kr3H_mdXS3JSWp09Qs7RVzDAMy0tv_p_JYkz5Whdl20bGkDGJKbRQJ5UR4MOBkvCxde5eRHDKxWhNCL7VcdDhksEhSzNQdqw4HatPf5Q2m9CBM-ANA7nApQAKZbrT7VQtJptqliwao4rZy1zio22InKot1QyEdKcTvY57CaNWgnKff3be1PHfohWhbNmr-d0p4jS940dDt_5kfg"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full material-symbols-outlined text-walnut hover:text-primary transition-colors">favorite</button>
+<div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<button class="w-full bg-charcoal text-white py-3 rounded-lg font-bold text-sm tracking-wider uppercase">Quick View</button>
+</div>
+</div>
+<div class="px-2">
+<h3 class="font-serif text-xl mb-1">Lucent Ceramic Lamp</h3>
+<div class="flex items-center justify-between">
+<span class="text-walnut/60 text-sm">Matte White</span>
+<span class="font-bold text-primary">$350</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Craftsmanship Section -->
+<section class="flex flex-col lg:flex-row min-h-[600px] bg-white overflow-hidden">
+<div class="lg:w-1/2 relative min-h-[400px]">
+<img alt="Craftsman at work" class="absolute inset-0 w-full h-full object-cover" data-alt="Close up of carpenter hands working on premium wood furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZDH3o9zwz3a0c-Ua7bWsOWSDYlwkC2MGMIgnoLkv8nHY3E5RfKfgodeeBHPQ_J_9Rptnp4C6zgtXuRIMq85T9HERRmNVobkBS3ufe4BxFIBgZhYrSg7wxLXLVwkXvvrOldXVWsRgQrhQnzyylMaYxNfeVwrvxyM-gi8qbZ3jovUhbNLGTdmJzleLdfsBCbxea_iRVgluvrEMD6F8A40RLJvek80azND2JBRjS-laFH49eZciJ8oqXPGpOiYrPnAoJh2ezJYhL28s"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+<div class="lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center bg-background-light">
+<span class="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-4">Our Legacy</span>
+<h2 class="font-serif text-4xl lg:text-5xl mb-8 leading-tight">Designed with Precision, Built to Last</h2>
+<p class="text-charcoal/70 text-lg leading-relaxed mb-10 max-w-lg">
+                We believe that every piece of furniture tells a story. From the selection of sustainable A-grade timbers to the final hand-polished finish, our master artisans ensure that every curve and joint meets the highest standards of luxury.
+            </p>
+<a class="inline-flex items-center gap-4 font-bold uppercase tracking-widest text-sm text-charcoal group" href="#">
+                Learn More About Our Process
+                <span class="w-12 h-px bg-charcoal transition-all group-hover:w-20"></span>
+</a>
+</div>
+</section>
+<!-- Visual Gallery (Masonry) -->
+<section class="py-24 px-6 lg:px-20 max-w-[1440px] mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-serif text-4xl">Styled to Inspire</h2>
+</div>
+<div class="masonry-grid">
+<div class="masonry-item-tall group relative overflow-hidden rounded-2xl">
+<img alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Stylishly arranged living room corner with books and plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZejQ2P-RYmmcS1tVqpw--dHsjwAW07WsmvD_Qk44UYRHBn7HOcxC1NVBJ50W5Q-3INGOmVFxi42mNtyM6Y6HxeVhxzH4x1ySkuvpYC6u3Df5VI20P7RJko8rjwf2NIFVlSuTV0mlruibKzLqQZUNuECEyrLSLmBDnwI1SOllSqRsb6Xq7YXjbf_mftjLc8e6mJAj03MhbfLKI_TcKhBQb68r9EKACbnXKyeE-SeV1SrCPNEULOT2ZR1u0V4tF0dFXZnr0jhvqp1s"/>
+</div>
+<div class="masonry-item-wide group relative overflow-hidden rounded-2xl">
+<img alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Minimalist bedroom with warm lighting and wooden bed frame" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBqtwJkqT5hajvsY0BqeqjFDoAYPamPjvepAsjr0zYvaPj38k5DrElcX-59P_P5ymuRL8L4uukILS0yTrX4cHtvdLaBQtbhoLJQOTBt-wy_Xx0yK5bx15vInMCiFwkhTOaAr6RCfXtb51_EBRhDg7afuBHNC55ki-V8SMAeZ3HhUdKGi6C5fQVM0_Iohlico-4G1SsRYMmYLK9Jwa626P6g8hTjZYNygGjBzsTrPGy4KNP9div9fYF3N5-F97l7nLlhZqXZ_YNF0k"/>
+</div>
+<div class="masonry-item-tall group relative overflow-hidden rounded-2xl">
+<img alt="Gallery 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern dining room setup with circular table and pendant light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlqY7xW0jJ0Y1Z7oI25-X--Yqf3vaidGWfCFCU1RhVpyhpx9TslICWTKmiHW-RzXB5l_eQEBZm8xnAgp4VINFd8mntPsRcBdwpYpyOXNJdy7KcyM_cYxaU8FSb2nx1CuSnqvVaEvXh8SyKIJFP0yqjXsTm49th08rjNyC77ic-fpMkJDwr8XUs93pFunOrE6Cq5v8gS8IOT4nSBK76iEujV3cKeGOv119FbqQiXHxaAdFKdzXnOxKF-rhws9SfKgW8deZbdBp9B7c"/>
+</div>
+<div class="masonry-item-wide group relative overflow-hidden rounded-2xl">
+<img alt="Gallery 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Light-filled home office with sleek desk and ergonomic chair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBED-mnIt263_KaothtTiKQyejMOYhFkw5MjX1NiU7nqYwlMdEonCCV4w0toOqEXfkl22N3hVoZfQb60-G9FYYc7Z2DHRIc9Qb_G5rZ4k5URjMPBdP9vOHs1pc6F35vHwqpQkLMuDwtfe7TB2I8hZcN3MADvOeag862scsxOwONlmGo91sz0hSIcWW51hUXbOtIkkQf1nc1Lwglc01NzU7ahNnWk3eRnkBHKJvj1VJUcxrPjoZdE3nHq8zlOekx1rSbHjEaG0oeAvQ"/>
+</div>
+</div>
+</section>
+<!-- Reviews -->
+<section class="bg-charcoal text-white py-24 px-6">
+<div class="max-w-[1440px] mx-auto overflow-hidden">
+<div class="flex flex-col items-center text-center">
+<div class="flex gap-1 text-primary mb-8">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<blockquote class="font-serif text-2xl md:text-3xl lg:text-4xl italic max-w-3xl leading-snug mb-12">
+                    "The quality is unparalleled. Our living room has been completely transformed into a space that feels both artistic and incredibly comfortable. A true luxury experience."
+                </blockquote>
+<div class="flex items-center gap-4">
+<div class="size-16 rounded-full overflow-hidden border-2 border-primary/30">
+<img alt="Customer" data-alt="Portrait of a satisfied customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJneAcDRfRLp1t00O3ZlnuN3jSVhMvUxHx3ROqvJR41rLea0_XcR4MNdyOsZftjE9Odpi9jZVXI2uv5Gvh9FyQKD4HG3BKjsKsQVkGLxlRbG-bOwaQkfG7O2MsX5-OzyNFR6PxnayR3NqnSKPpKvFnchTnyapwrJUYxu2oXifNIQexLHoqVDuKUzWHwTU011ad8hmVHNnsWBzgBYxw5GI4kfm8dFSEHDbIzlIxgfBBDN2qwSke-Vo76mkqqpDXFUEM0jvX7oXsrjA"/>
+</div>
+<div class="text-left">
+<p class="font-bold text-lg">Julian Alexander</p>
+<p class="text-primary/70 text-sm uppercase tracking-widest">Architect, NYC</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Showroom Highlight -->
+<section class="py-24 px-6 lg:px-20 max-w-[1440px] mx-auto">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div>
+<span class="text-primary font-bold uppercase tracking-[0.3em] text-xs">Our Showrooms</span>
+<h2 class="font-serif text-4xl mt-2">Visit the Milan Studio</h2>
+</div>
+<div class="grid grid-cols-2 gap-8 py-8 border-y border-walnut/10">
+<div>
+<h4 class="font-bold text-sm uppercase mb-4 text-walnut/50">Address</h4>
+<p class="text-lg">Via della Spiga, 14<br/>20121 Milano MI, Italy</p>
+</div>
+<div>
+<h4 class="font-bold text-sm uppercase mb-4 text-walnut/50">Opening Hours</h4>
+<p class="text-lg">Mon - Sat: 10am - 7pm<br/>Sun: By Appointment</p>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="bg-charcoal text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-primary transition-colors">Get Directions</button>
+<button class="border border-walnut/20 px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-walnut/5 transition-colors">Contact Studio</button>
+</div>
+</div>
+<div class="relative group h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" data-alt="Interior of a luxury flagship furniture showroom" data-location="Milan, Italy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAq-sT8a1FjqqZrY8FDQwe4eW_gFBu4A53wPFxe-A5Qd81aejrsqujEujtbzQfKexZJln0mRsS0Q93x03kQai98MJTlrRZqzCaiXuTNu8isryBkxspLjlOdrO7M11Yf7y2PebI6SU92qY5Z9i8iW96M9Jpx97kFGuVsGZPJNuwhkE8mO8lRyGAsUA_Fro50XNFk8dAEsE5cXE2omveXg4_ax2dPahkcmgRpR-5Fw-FKIDmxucQ2uZJQ_IbfvvusI-l6FUrX9H87UI"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-charcoal/40 to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="bg-primary/10 py-24 px-6">
+<div class="max-w-[800px] mx-auto text-center">
+<h2 class="font-serif text-4xl mb-4">Stay Inspired</h2>
+<p class="text-walnut/70 mb-10">Join our newsletter for exclusive previews of new collections and interior design tips from our experts.</p>
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-1 px-8 py-4 rounded-full bg-white border-transparent focus:border-primary focus:ring-0 text-charcoal outline-none shadow-sm" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm shadow-lg shadow-primary/20 hover:scale-105 transition-transform">Subscribe</button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-charcoal text-white/90 pt-24 pb-12 px-6 lg:px-20">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+<div class="space-y-6">
+<a class="flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-primary text-3xl">chair</span>
+<h2 class="font-serif text-2xl font-bold tracking-tight text-white">LUXE</h2>
+</a>
+<p class="text-white/50 leading-relaxed">Crafting timeless elegance for the modern home since 1984. Minimalist design, maximal quality.</p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<svg class="size-5 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<svg class="size-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-8 text-primary">Collections</h4>
+<ul class="space-y-4 text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Living Room</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Dining Series</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Sleeping Quarters</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Workspace</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Decor &amp; lighting</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-8 text-primary">Quick Links</h4>
+<ul class="space-y-4 text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Our Showrooms</a></li>
+<li><a class="hover:text-white transition-colors" href="#">The Design Journal</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Bespoke Services</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Trade Membership</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Shipping &amp; Returns</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase tracking-widest text-sm mb-8 text-primary">Contact</h4>
+<ul class="space-y-4 text-white/60">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">phone</span> +39 02 123 4567</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">mail</span> hello@luxeinteriors.it</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">location_on</span> Milan, Paris, New York</li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-sm text-white/30">
+<p>© 2024 Luxe Interiors. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
